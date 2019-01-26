@@ -1,6 +1,8 @@
+
 num = int(input("enter the number: "))
-
-s = str(num)[::-1]
-print("reverse of the number is: ",s)
-
-
+rev=0
+while(num>0):
+    rem = num%10
+    rev = (rev*10)+rem
+    num = num//10
+print("reverse of the number is: " ,rev)* ""
